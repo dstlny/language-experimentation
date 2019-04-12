@@ -6,7 +6,6 @@ function binarysearch($array, $value, $min, $max){
     
         if($array[$middle] == $value){
            return $count;
-           break;
         } else if ($array[$middle] > $value){
             binarySearch($array, $value, $min, $middle - 1);
         } else {
